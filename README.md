@@ -25,4 +25,4 @@ class Foo {
 
 ## Details of the scope and time
 
-Private state and the class binding is visible. The code executes after the whole class has been evaluated, including decorators, and therefore the class binding is no longer in TDZ.
+Private state and the class binding is visible. The code executes after the whole class has been evaluated, including decorators, and therefore the class binding is no longer in TDZ. The scope is nested lexically inside where the class is defined, e.g., `arguments` and `this` are inherited lexically.
